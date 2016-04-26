@@ -16,6 +16,7 @@
 		C109A17E1CC9578F002BDFB9 /* OpenSans-CondLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C109A17A1CC9578F002BDFB9 /* OpenSans-CondLight.ttf */; };
 		C109A17F1CC9578F002BDFB9 /* OpenSans-CondLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C109A17B1CC9578F002BDFB9 /* OpenSans-CondLightItalic.ttf */; };
 		C1A4692B1CCE79DA00A32764 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A4692A1CCE79DA00A32764 /* CustomCell.swift */; };
+		C1FE51661CCFC9EA0026960C /* AddProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FE51651CCFC9EA0026960C /* AddProduct.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		C109A17A1CC9578F002BDFB9 /* OpenSans-CondLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-CondLight.ttf"; path = "open-sans-condensed/OpenSans-CondLight.ttf"; sourceTree = "<group>"; };
 		C109A17B1CC9578F002BDFB9 /* OpenSans-CondLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-CondLightItalic.ttf"; path = "open-sans-condensed/OpenSans-CondLightItalic.ttf"; sourceTree = "<group>"; };
 		C1A4692A1CCE79DA00A32764 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
+		C1FE51651CCFC9EA0026960C /* AddProduct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddProduct.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,7 +64,8 @@
 		AA226BC51CB56B6E0011AA65 /* productpal */ = {
 			isa = PBXGroup;
 			children = (
-				C1A469291CCE796500A32764 /* Cell */,
+				C1FE51641CCFC9A80026960C /* AddProduct */,
+				C1A469291CCE796500A32764 /* CustomCells */,
 				C109A1761CC95769002BDFB9 /* Resources */,
 				AA226BC61CB56B6E0011AA65 /* AppDelegate.swift */,
 				AA226BC81CB56B6E0011AA65 /* ViewController.swift */,
@@ -84,12 +87,20 @@
 			name = Resources;
 			sourceTree = "<group>";
 		};
-		C1A469291CCE796500A32764 /* Cell */ = {
+		C1A469291CCE796500A32764 /* CustomCells */ = {
 			isa = PBXGroup;
 			children = (
 				C1A4692A1CCE79DA00A32764 /* CustomCell.swift */,
 			);
-			name = Cell;
+			name = CustomCells;
+			sourceTree = "<group>";
+		};
+		C1FE51641CCFC9A80026960C /* AddProduct */ = {
+			isa = PBXGroup;
+			children = (
+				C1FE51651CCFC9EA0026960C /* AddProduct.swift */,
+			);
+			name = AddProduct;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA226BC91CB56B6E0011AA65 /* ViewController.swift in Sources */,
+				C1FE51661CCFC9EA0026960C /* AddProduct.swift in Sources */,
 				C1A4692B1CCE79DA00A32764 /* CustomCell.swift in Sources */,
 				AA226BC71CB56B6E0011AA65 /* AppDelegate.swift in Sources */,
 			);
