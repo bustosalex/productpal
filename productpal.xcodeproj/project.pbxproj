@@ -15,8 +15,8 @@
 		C109A17D1CC9578F002BDFB9 /* OpenSans-CondBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C109A1791CC9578F002BDFB9 /* OpenSans-CondBold.ttf */; };
 		C109A17E1CC9578F002BDFB9 /* OpenSans-CondLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C109A17A1CC9578F002BDFB9 /* OpenSans-CondLight.ttf */; };
 		C109A17F1CC9578F002BDFB9 /* OpenSans-CondLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C109A17B1CC9578F002BDFB9 /* OpenSans-CondLightItalic.ttf */; };
+		C1376FE81CD018CE00DB7AE5 /* ProductsDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C1376FE61CD018CE00DB7AE5 /* ProductsDataModel.xcdatamodeld */; };
 		C1A4692B1CCE79DA00A32764 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A4692A1CCE79DA00A32764 /* CustomCell.swift */; };
-		C1FE51661CCFC9EA0026960C /* AddProduct.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1FE51651CCFC9EA0026960C /* AddProduct.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +30,8 @@
 		C109A1791CC9578F002BDFB9 /* OpenSans-CondBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-CondBold.ttf"; path = "open-sans-condensed/OpenSans-CondBold.ttf"; sourceTree = "<group>"; };
 		C109A17A1CC9578F002BDFB9 /* OpenSans-CondLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-CondLight.ttf"; path = "open-sans-condensed/OpenSans-CondLight.ttf"; sourceTree = "<group>"; };
 		C109A17B1CC9578F002BDFB9 /* OpenSans-CondLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-CondLightItalic.ttf"; path = "open-sans-condensed/OpenSans-CondLightItalic.ttf"; sourceTree = "<group>"; };
+		C1376FE71CD018CE00DB7AE5 /* ProductsDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ProductsDataModel.xcdatamodel; sourceTree = "<group>"; };
 		C1A4692A1CCE79DA00A32764 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
-		C1FE51651CCFC9EA0026960C /* AddProduct.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddProduct.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +70,7 @@
 				AA226BC61CB56B6E0011AA65 /* AppDelegate.swift */,
 				AA226BC81CB56B6E0011AA65 /* ViewController.swift */,
 				AA226BCA1CB56B6E0011AA65 /* Main.storyboard */,
+				C1376FE61CD018CE00DB7AE5 /* ProductsDataModel.xcdatamodeld */,
 				AA226BCD1CB56B6E0011AA65 /* Assets.xcassets */,
 				AA226BCF1CB56B6E0011AA65 /* LaunchScreen.storyboard */,
 				AA226BD21CB56B6E0011AA65 /* Info.plist */,
@@ -98,7 +99,6 @@
 		C1FE51641CCFC9A80026960C /* AddProduct */ = {
 			isa = PBXGroup;
 			children = (
-				C1FE51651CCFC9EA0026960C /* AddProduct.swift */,
 			);
 			name = AddProduct;
 			sourceTree = "<group>";
@@ -178,7 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA226BC91CB56B6E0011AA65 /* ViewController.swift in Sources */,
-				C1FE51661CCFC9EA0026960C /* AddProduct.swift in Sources */,
+				C1376FE81CD018CE00DB7AE5 /* ProductsDataModel.xcdatamodeld in Sources */,
 				C1A4692B1CCE79DA00A32764 /* CustomCell.swift in Sources */,
 				AA226BC71CB56B6E0011AA65 /* AppDelegate.swift in Sources */,
 			);
@@ -337,6 +337,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C1376FE61CD018CE00DB7AE5 /* ProductsDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C1376FE71CD018CE00DB7AE5 /* ProductsDataModel.xcdatamodel */,
+			);
+			currentVersion = C1376FE71CD018CE00DB7AE5 /* ProductsDataModel.xcdatamodel */;
+			path = ProductsDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = AA226BBB1CB56B6E0011AA65 /* Project object */;
 }
