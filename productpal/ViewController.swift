@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RealmSwift
 
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
@@ -21,17 +22,22 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     func tableView(tableView:UITableView, numberOfRowsInSection section:Int) -> Int
     {
-        return 1
+        let collection = try! Realm().objects(ProductModel)
+        return collection.count
     }
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell
     {
         let cell = tableView.dequeueReusableCellWithIdentifier("Product Cell") as! CustomCell
-        cell.itemName.text = "Cock"
+        let allProducts = try! Realm().objects(ProductModel)
+        let product = allProducts[indexPath.row]
+        
+        cell.itemName.text = product.name
+        cell.returnDate.text = "5/5/17"
+        cell.protectionDate.text = "5/5/17"
+        cell.warranyDate.text = "5/5/17"
         cell.itemImage!.image = UIImage(named: "canon")
-        cell.returnDate.text = "5/25/16"
-        cell.protectionDate.text = "5/25/17"
-        cell.warranyDate.text = "12/25/16"
+        
         return cell
     }
     

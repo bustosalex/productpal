@@ -9,6 +9,7 @@
 
 import UIKit
 import CoreData
+import RealmSwift
 
 class AddProductTab: UITableViewController {
     //These are the attributes for the core data model
@@ -38,32 +39,30 @@ class AddProductTab: UITableViewController {
     
     @IBAction func saveProduct(sender: AnyObject) {
         
-        let entityDescription = NSEntityDescription.entityForName("Products", inManagedObjectContext: managedObjectContext)
-        let product = Products(entity: entityDescription!, insertIntoManagedObjectContext: managedObjectContext)
-        
         let check = checkIfShitIsFilledOut()
         
         if(check != true){
             fieldsNotFilledErrorMessage()
         }
         else{
-        
-            product.itemName = itemName.text!
-            product.store = storeName.text!
-            product.itemDescription = itemDescription.text!
-        
-            product.returnDate = returnDate.date
-            product.warrantyDate = warrantyDate.date
-            product.protectionDate = protectionDate.date
+            let realm = try! Realm()
+            let newProduct = ProductModel()
             
-            do {
-                try managedObjectContext.save()
+            newProduct.name = itemName.text!
+            newProduct.store = storeName.text!
+            newProduct.desc = itemDescription.text!
+            newProduct.returnDate = returnDate.date
+            newProduct.warrantyDate = warrantyDate.date
+            newProduct.protectionDate = protectionDate.date
+            
+            
+            try! realm.write {
+                realm.add(newProduct)
+                print("Saved your shit. \(newProduct.name)")
             }
-            catch let error as NSError{
-                print(error.localizedFailureReason)
-            }
+
         }
-        
+                
         
     }
     /**
