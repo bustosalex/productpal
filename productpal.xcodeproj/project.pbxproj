@@ -12,6 +12,14 @@
 		AA226BCC1CB56B6E0011AA65 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA226BCA1CB56B6E0011AA65 /* Main.storyboard */; };
 		AA226BCE1CB56B6E0011AA65 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA226BCD1CB56B6E0011AA65 /* Assets.xcassets */; };
 		AA226BD11CB56B6E0011AA65 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA226BCF1CB56B6E0011AA65 /* LaunchScreen.storyboard */; };
+		C109A17D1CC9578F002BDFB9 /* OpenSans-CondBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C109A1791CC9578F002BDFB9 /* OpenSans-CondBold.ttf */; };
+		C109A17E1CC9578F002BDFB9 /* OpenSans-CondLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C109A17A1CC9578F002BDFB9 /* OpenSans-CondLight.ttf */; };
+		C109A17F1CC9578F002BDFB9 /* OpenSans-CondLightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C109A17B1CC9578F002BDFB9 /* OpenSans-CondLightItalic.ttf */; };
+		C1376FE81CD018CE00DB7AE5 /* ProductsDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C1376FE61CD018CE00DB7AE5 /* ProductsDataModel.xcdatamodeld */; };
+		C17AE3B41CDBA9160008C7BF /* AddProductTab.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17AE3B31CDBA9160008C7BF /* AddProductTab.swift */; };
+		C17AE3B71CDBABCA0008C7BF /* Products+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17AE3B51CDBABCA0008C7BF /* Products+CoreDataProperties.swift */; };
+		C17AE3B81CDBABCA0008C7BF /* Products.swift in Sources */ = {isa = PBXBuildFile; fileRef = C17AE3B61CDBABCA0008C7BF /* Products.swift */; };
+		C1A4692B1CCE79DA00A32764 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1A4692A1CCE79DA00A32764 /* CustomCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +30,14 @@
 		AA226BCD1CB56B6E0011AA65 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA226BD01CB56B6E0011AA65 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA226BD21CB56B6E0011AA65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C109A1791CC9578F002BDFB9 /* OpenSans-CondBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-CondBold.ttf"; path = "open-sans-condensed/OpenSans-CondBold.ttf"; sourceTree = "<group>"; };
+		C109A17A1CC9578F002BDFB9 /* OpenSans-CondLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-CondLight.ttf"; path = "open-sans-condensed/OpenSans-CondLight.ttf"; sourceTree = "<group>"; };
+		C109A17B1CC9578F002BDFB9 /* OpenSans-CondLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-CondLightItalic.ttf"; path = "open-sans-condensed/OpenSans-CondLightItalic.ttf"; sourceTree = "<group>"; };
+		C1376FE71CD018CE00DB7AE5 /* ProductsDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ProductsDataModel.xcdatamodel; sourceTree = "<group>"; };
+		C17AE3B31CDBA9160008C7BF /* AddProductTab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddProductTab.swift; sourceTree = "<group>"; };
+		C17AE3B51CDBABCA0008C7BF /* Products+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Products+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C17AE3B61CDBABCA0008C7BF /* Products.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
+		C1A4692A1CCE79DA00A32764 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +54,8 @@
 		AA226BBA1CB56B6E0011AA65 = {
 			isa = PBXGroup;
 			children = (
+				C17AE3B51CDBABCA0008C7BF /* Products+CoreDataProperties.swift */,
+				C17AE3B61CDBABCA0008C7BF /* Products.swift */,
 				AA226BC51CB56B6E0011AA65 /* productpal */,
 				AA226BC41CB56B6E0011AA65 /* Products */,
 			);
@@ -54,14 +72,44 @@
 		AA226BC51CB56B6E0011AA65 /* productpal */ = {
 			isa = PBXGroup;
 			children = (
+				C1FE51641CCFC9A80026960C /* AddProduct */,
+				C1A469291CCE796500A32764 /* CustomCells */,
+				C109A1761CC95769002BDFB9 /* Resources */,
 				AA226BC61CB56B6E0011AA65 /* AppDelegate.swift */,
+				C17AE3B31CDBA9160008C7BF /* AddProductTab.swift */,
 				AA226BC81CB56B6E0011AA65 /* ViewController.swift */,
 				AA226BCA1CB56B6E0011AA65 /* Main.storyboard */,
+				C1376FE61CD018CE00DB7AE5 /* ProductsDataModel.xcdatamodeld */,
 				AA226BCD1CB56B6E0011AA65 /* Assets.xcassets */,
 				AA226BCF1CB56B6E0011AA65 /* LaunchScreen.storyboard */,
 				AA226BD21CB56B6E0011AA65 /* Info.plist */,
 			);
 			path = productpal;
+			sourceTree = "<group>";
+		};
+		C109A1761CC95769002BDFB9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				C109A1791CC9578F002BDFB9 /* OpenSans-CondBold.ttf */,
+				C109A17A1CC9578F002BDFB9 /* OpenSans-CondLight.ttf */,
+				C109A17B1CC9578F002BDFB9 /* OpenSans-CondLightItalic.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		C1A469291CCE796500A32764 /* CustomCells */ = {
+			isa = PBXGroup;
+			children = (
+				C1A4692A1CCE79DA00A32764 /* CustomCell.swift */,
+			);
+			name = CustomCells;
+			sourceTree = "<group>";
+		};
+		C1FE51641CCFC9A80026960C /* AddProduct */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = AddProduct;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -123,7 +171,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA226BD11CB56B6E0011AA65 /* LaunchScreen.storyboard in Resources */,
+				C109A17E1CC9578F002BDFB9 /* OpenSans-CondLight.ttf in Resources */,
 				AA226BCE1CB56B6E0011AA65 /* Assets.xcassets in Resources */,
+				C109A17D1CC9578F002BDFB9 /* OpenSans-CondBold.ttf in Resources */,
+				C109A17F1CC9578F002BDFB9 /* OpenSans-CondLightItalic.ttf in Resources */,
 				AA226BCC1CB56B6E0011AA65 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,7 +187,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA226BC91CB56B6E0011AA65 /* ViewController.swift in Sources */,
+				C17AE3B71CDBABCA0008C7BF /* Products+CoreDataProperties.swift in Sources */,
+				C1376FE81CD018CE00DB7AE5 /* ProductsDataModel.xcdatamodeld in Sources */,
+				C17AE3B81CDBABCA0008C7BF /* Products.swift in Sources */,
+				C1A4692B1CCE79DA00A32764 /* CustomCell.swift in Sources */,
 				AA226BC71CB56B6E0011AA65 /* AppDelegate.swift in Sources */,
+				C17AE3B41CDBA9160008C7BF /* AddProductTab.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +349,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C1376FE61CD018CE00DB7AE5 /* ProductsDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C1376FE71CD018CE00DB7AE5 /* ProductsDataModel.xcdatamodel */,
+			);
+			currentVersion = C1376FE71CD018CE00DB7AE5 /* ProductsDataModel.xcdatamodel */;
+			path = ProductsDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = AA226BBB1CB56B6E0011AA65 /* Project object */;
 }

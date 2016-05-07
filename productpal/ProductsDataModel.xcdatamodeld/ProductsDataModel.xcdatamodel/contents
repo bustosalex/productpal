@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15E65" minimumToolsVersion="Xcode 7.0">
+    <entity name="Products" representedClassName=".Products" syncable="YES">
+        <attribute name="itemDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itemName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="notes" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="productNumber" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="protectionDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="returnDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="store" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="warrantyDate" optional="YES" attributeType="Date" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Products" positionX="-63" positionY="-18" width="128" height="178"/>
+    </elements>
+</model>
