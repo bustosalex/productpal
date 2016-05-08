@@ -32,10 +32,19 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         let allProducts = try! Realm().objects(ProductModel)
         let product = allProducts[indexPath.row]
         
+        let dateFormatter = NSDateFormatter()
+        dateFormatter.dateFormat = "MM/dd/yyyy"
+        
+        
         cell.itemName.text = product.name
-        cell.returnDate.text = "5/5/17"
-        cell.protectionDate.text = "5/5/17"
-        cell.warranyDate.text = "5/5/17"
+        var dateString = dateFormatter.stringFromDate(product.returnDate!)
+        cell.returnDate.text = dateString
+        dateString = dateFormatter.stringFromDate(product.protectionDate!)
+        cell.protectionDate.text = dateString
+        dateString = dateFormatter.stringFromDate(product.warrantyDate!)
+        cell.warranyDate.text = dateString
+        
+        
         cell.itemImage!.image = UIImage(named: "canon")
         
         return cell
