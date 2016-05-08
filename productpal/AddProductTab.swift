@@ -63,11 +63,27 @@ class AddProductTab: UITableViewController {
                 realm.add(newProduct)
                 setReminder()
                 print("Saved your shit. \(newProduct.name)")
+                showPopUP()
+                clear()
+                self.tabBarController!.selectedIndex = 0
             }
 
         }
                 
         
+    }
+    
+    func clear(){
+        itemName.text = ""
+        itemDescription.text = ""
+        storeName.text = ""
+        productNumber.text = ""
+        
+        let currentDate = NSDate()
+        
+        returnDate.setDate(currentDate, animated: true)
+        warrantyDate.setDate(currentDate, animated: true)
+        protectionDate.setDate(currentDate, animated: true)
     }
     /**
         This function checks if three text fields are filled 
@@ -188,6 +204,18 @@ class AddProductTab: UITableViewController {
         
         
         return isSameDate
+    }
+    
+    func showPopUP(){
+        
+        //let dateFormatter = NSDateFormatter()
+        // Prints
+        //dateFormatter.dateFormat = "MMM dd yyyy '@' HH:mm"
+        //let date = dateFormatter.stringFromDate(myDatePicker.date)
+        
+        let alert = UIAlertController(title: "Great!", message:"\(itemName.text!) saved successfully", preferredStyle: .Alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .Default) { _ in })
+        self.presentViewController(alert, animated: true){}
     }
     
         
