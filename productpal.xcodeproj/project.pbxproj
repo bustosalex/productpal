@@ -38,8 +38,8 @@
 		C109A17B1CC9578F002BDFB9 /* OpenSans-CondLightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "OpenSans-CondLightItalic.ttf"; path = "open-sans-condensed/OpenSans-CondLightItalic.ttf"; sourceTree = "<group>"; };
 		C1376FE71CD018CE00DB7AE5 /* ProductsDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ProductsDataModel.xcdatamodel; sourceTree = "<group>"; };
 		C17AE3B31CDBA9160008C7BF /* AddProductTab.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddProductTab.swift; sourceTree = "<group>"; };
-		C17AE3B51CDBABCA0008C7BF /* Products+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Products+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		C17AE3B61CDBABCA0008C7BF /* Products.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Products.swift; sourceTree = "<group>"; };
+		C17AE3B51CDBABCA0008C7BF /* Products+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "Products+CoreDataProperties.swift"; path = "../Products+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C17AE3B61CDBABCA0008C7BF /* Products.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Products.swift; path = ../Products.swift; sourceTree = "<group>"; };
 		C1A4692A1CCE79DA00A32764 /* CustomCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		C1B6C8561CDE81EE0065DA5E /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Realm.framework; path = Carthage/Build/iOS/Realm.framework; sourceTree = "<group>"; };
 		C1B6C8581CDE81FD0065DA5E /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RealmSwift.framework; path = Carthage/Build/iOS/RealmSwift.framework; sourceTree = "<group>"; };
@@ -64,8 +64,6 @@
 			children = (
 				C1B6C8581CDE81FD0065DA5E /* RealmSwift.framework */,
 				C1B6C8561CDE81EE0065DA5E /* Realm.framework */,
-				C17AE3B51CDBABCA0008C7BF /* Products+CoreDataProperties.swift */,
-				C17AE3B61CDBABCA0008C7BF /* Products.swift */,
 				AA226BC51CB56B6E0011AA65 /* productpal */,
 				AA226BC41CB56B6E0011AA65 /* Products */,
 			);
@@ -86,9 +84,6 @@
 				C1A469291CCE796500A32764 /* CustomCells */,
 				C109A1761CC95769002BDFB9 /* Resources */,
 				AA226BC61CB56B6E0011AA65 /* AppDelegate.swift */,
-				C17AE3B31CDBA9160008C7BF /* AddProductTab.swift */,
-				C1B6C85B1CDE841A0065DA5E /* ProductModel.swift */,
-				AA226BC81CB56B6E0011AA65 /* ViewController.swift */,
 				AA226BCA1CB56B6E0011AA65 /* Main.storyboard */,
 				C1376FE61CD018CE00DB7AE5 /* ProductsDataModel.xcdatamodeld */,
 				AA226BCD1CB56B6E0011AA65 /* Assets.xcassets */,
@@ -112,6 +107,7 @@
 			isa = PBXGroup;
 			children = (
 				C1A4692A1CCE79DA00A32764 /* CustomCell.swift */,
+				AA226BC81CB56B6E0011AA65 /* ViewController.swift */,
 			);
 			name = CustomCells;
 			sourceTree = "<group>";
@@ -119,6 +115,10 @@
 		C1FE51641CCFC9A80026960C /* AddProduct */ = {
 			isa = PBXGroup;
 			children = (
+				C17AE3B31CDBA9160008C7BF /* AddProductTab.swift */,
+				C17AE3B61CDBABCA0008C7BF /* Products.swift */,
+				C17AE3B51CDBABCA0008C7BF /* Products+CoreDataProperties.swift */,
+				C1B6C85B1CDE841A0065DA5E /* ProductModel.swift */,
 			);
 			name = AddProduct;
 			sourceTree = "<group>";
